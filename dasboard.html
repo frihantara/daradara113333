@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Dashboard</title>
+    <style>
+      /* General Reset */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f9f9f9;
+        color: #333;
+      }
+
+      .admin-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 2rem;
+        background-color: #007bff;
+        color: #fff;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+
+      .admin-title {
+        font-size: 1.5rem;
+      }
+
+      .logout-button {
+        background-color: #ff4d4d;
+        color: #fff;
+        padding: 0.5rem 1rem;
+        text-decoration: none;
+        border-radius: 4px;
+        font-weight: bold;
+        transition: background-color 0.3s;
+      }
+
+      .logout-button:hover {
+        background-color: #ff3333;
+      }
+
+      .admin-content {
+        padding: 2rem;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 2rem 0;
+        background-color: #fff;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+
+      th,
+      td {
+        padding: 1rem;
+        text-align: left;
+        border: 1px solid #ddd;
+      }
+
+      th {
+        background-color: #007bff;
+        color: white;
+      }
+
+      tr:nth-child(even) {
+        background-color: #f2f2f2;
+      }
+
+      /* Responsiveness */
+      @media (max-width: 768px) {
+        .admin-header {
+          flex-direction: column;
+          text-align: center;
+        }
+
+        .logout-button {
+          margin-top: 1rem;
+        }
+
+        table {
+          font-size: 0.9rem;
+        }
+
+        th,
+        td {
+          padding: 0.5rem;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .admin-title {
+          font-size: 1.2rem;
+        }
+
+        .logout-button {
+          padding: 0.4rem 0.8rem;
+        }
+
+        table {
+          font-size: 0.8rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="admin-header">
+      <h1 class="admin-title">Admin Dashboard</h1>
+      <a href="login.html" class="logout-button">Logout</a>
+    </header>
+    <main class="admin-content">
+      <h2>Account Information</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Type</th>
+            <th>Email/Username</th>
+            <th>Password</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Email</td>
+            <td>ztfrihantara@gmail.com</td>
+            <td>Gm4111L113333</td>
+          </tr>
+          <tr>
+            <td>Email</td>
+            <td>lazuard</td>
+            <td>lazuardangkatan15</td>
+          </tr>
+          <tr>
+            <td>Email</td>
+            <td>bluva</td>
+            <td>bluvademarceg8</td>
+          </tr>
+          <tr>
+            <td>Instagram</td>
+            <td>ztfhan & sec account</td>
+            <td>|n5t4Gram113333</td>
+          </tr>
+          <tr>
+            <td>Instagram</td>
+            <td>lazuard</td>
+            <td>lazuardangkatan15</td>
+          </tr>
+          <tr>
+            <td>Instagram</td>
+            <td>bluva</td>
+            <td>OdadingMangOleh113333</td>
+          </tr>
+          <tr>
+            <td>Facebook</td>
+            <td>Frihantara (081212648390)</td>
+            <td>FaceBook113333</td>
+          </tr>
+          <tr>
+            <td>Facebook</td>
+            <td>Ztfhan (ztfrihantara@gmail.com)</td>
+            <td>FaceBook113333</td>
+          </tr>
+          <tr>
+            <td>Discord</td>
+            <td>ztfrihantara@gmail.com</td>
+            <td>Disc000rd113333</td>
+          </tr>
+        </tbody>
+      </table>
+    </main>
+  </body>
+</html>
